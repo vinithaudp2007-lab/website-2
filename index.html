@@ -1,0 +1,1556 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="theme-color" content="#090709">
+  <meta name="description" content="A little romantic world made for Dev and Vin.">
+
+  <title>You, Me &amp; Forever ❤️</title>
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <div class="background-glow glow-one"></div>
+  <div class="background-glow glow-two"></div>
+  <div id="floating-hearts" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="logo" href="#home" aria-label="You, Me and Forever home">
+      <span class="logo-heart">♥</span>
+      You, Me <span>&amp;</span> Forever
+    </a>
+
+    <nav aria-label="Main navigation">
+      <a href="#home" class="nav-link active">Home</a>
+      <a href="#our-time" class="nav-link">Our Time</a>
+      <a href="#secret" class="nav-link">Secret Note</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero section" id="home">
+      <div class="hero-content">
+        <p class="eyebrow">
+          <span class="tiny-heart">♥</span>
+          A LITTLE WORLD MADE JUST FOR US
+          <span class="tiny-heart">♥</span>
+        </p>
+
+        <h1>
+          You, Me<br>
+          <span class="and-text">&amp;</span>
+          <span class="forever-text">Forever</span>
+        </h1>
+
+        <p class="couple-names">DEV <span>♥</span> VIN</p>
+
+        <p class="hero-description">
+          Hey Nonsenseeee! 🥹❤️<br>
+          Welcome to our little world, where you're my
+          favourite person, my biggest headache, and my
+          forever favourite idiot.
+        </p>
+
+        <div class="hero-buttons">
+          <button type="button" class="btn btn-primary" id="open-heart">
+            Open My Heart <span aria-hidden="true">♥</span>
+          </button>
+
+          <a href="#our-time" class="btn btn-secondary">
+            Our little journey ↓
+          </a>
+        </div>
+
+        <p class="hero-footnote">
+          Made with love, a little drama, and lots of missing you.
+        </p>
+      </div>
+
+      <div class="hero-art" aria-label="A glowing heart">
+        <div class="heart-orbit orbit-one"></div>
+        <div class="heart-orbit orbit-two"></div>
+
+        <div class="heart-halo">
+          <div class="big-heart" aria-hidden="true">♥</div>
+        </div>
+
+        <span class="floating-word word-one">my person</span>
+        <span class="floating-word word-two">always ♡</span>
+        <span class="floating-word word-three">just us</span>
+      </div>
+    </section>
+
+    <!-- RELATIONSHIP COUNTER -->
+    <section class="section counter-section" id="our-time">
+      <div class="section-heading">
+        <p class="eyebrow">ONE DATE, A MILLION MEMORIES</p>
+        <h2>Our Time Together <span>♡</span></h2>
+        <p>Every second with you is another second of my favourite story.</p>
+      </div>
+
+      <div class="date-pill">
+        <span aria-hidden="true">♥</span>
+        Since 6 July 2025
+      </div>
+
+      <div class="counter-grid" aria-label="Our relationship duration">
+        <div class="counter-card">
+          <span class="counter-number" id="days">0</span>
+          <span class="counter-label">Days</span>
+        </div>
+
+        <div class="counter-card">
+          <span class="counter-number" id="hours">00</span>
+          <span class="counter-label">Hours</span>
+        </div>
+
+        <div class="counter-card">
+          <span class="counter-number" id="minutes">00</span>
+          <span class="counter-label">Minutes</span>
+        </div>
+
+        <div class="counter-card">
+          <span class="counter-number" id="seconds">00</span>
+          <span class="counter-label">Seconds</span>
+        </div>
+      </div>
+
+      <p class="counter-caption">
+        And counting… because I'm not planning to stop loving you. ❤️
+      </p>
+    </section>
+
+    <!-- SECRET NOTE -->
+    <section class="section secret-section" id="secret">
+      <div class="secret-card">
+        <div class="envelope-icon" aria-hidden="true">💌</div>
+        <p class="eyebrow">JUST FOR YOU, NONSENSEEEE</p>
+        <h2>A Little Secret</h2>
+        <p class="secret-intro">
+          There's something I want you to know.
+          No teasing until you read it, okay? 😂
+        </p>
+
+        <button type="button" class="btn btn-primary" id="reveal-secret">
+          Reveal My Secret ✨
+        </button>
+
+        <div class="secret-message" id="secret-message" hidden>
+          <p>
+            Out of all the people in this world, I'm so happy
+            that it's you. ❤️
+          </p>
+          <p>
+            You annoy me, make me laugh, make me miss you,
+            and somehow make ordinary days feel special.
+            Distance isn't always easy, but you're worth it.
+          </p>
+          <p class="signature">Forever your Vin. 💋</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- MUSIC -->
+    <section class="section music-section" id="our-song">
+      <div class="music-card">
+        <div class="music-art" aria-hidden="true">♫</div>
+
+        <div class="music-info">
+          <p class="eyebrow">OUR LITTLE SOUNDTRACK</p>
+          <h2>Our Song 🎧</h2>
+          <p id="music-status" aria-live="polite">
+            Add your favourite song to make this moment ours.
+          </p>
+        </div>
+
+        <button
+          type="button"
+          class="music-button"
+          id="music-toggle"
+          aria-label="Play our song"
+        >▶</button>
+
+        <audio id="our-song" preload="none">
+          <source src="assets/our-song.mp3" type="audio/mpeg">
+        </audio>
+      </div>
+    </section>
+
+    <!-- SURPRISE -->
+    <section class="section surprise-section">
+      <div class="surprise-card">
+        <p class="eyebrow">PSSST… ONE MORE THING</p>
+        <h2>Hey, my favourite idiot. 🥹</h2>
+        <p>
+          If I could teleport anywhere right now, I'd come
+          straight to you. But until then, this little website
+          is sending you the biggest hug.
+        </p>
+
+        <button type="button" class="btn btn-primary" id="hug-button">
+          Send Me a Hug 🫂
+        </button>
+
+        <p id="hug-message" class="hug-message" aria-live="polite" hidden>
+          Hug delivered! Hold it tight. No refunds, no returns. ❤️
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Made with all my heart, for my Nonsenseeee. ♥</p>
+    <p>DEV &amp; VIN · Since 6 July 2025</p>
+    <a href="#home">Back to the top ↑</a>
+  </footer>
+
+  <div
+    class="toast"
+    id="heart-toast"
+    role="status"
+    aria-live="polite"
+    hidden
+  ></div>
+  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Court of Love ❤️</title>
+  <link rel="stylesheet" href="court.css">
+  <script src="court.js" defer></script>
+</head>
+<body>
+
+  <div class="floating-hearts" aria-hidden="true">
+    <span>♥</span><span>♡</span><span>♥</span>
+    <span>♡</span><span>♥</span><span>♡</span>
+  </div>
+
+  <header class="court-header">
+    <a href="index.html" class="back-link">← Back to Our Little Secret</a>
+    <p class="small-heading">THE OFFICIAL COURT OF</p>
+    <h1>LOVE <span>⚖️</span></h1>
+    <p class="subtitle">Where love is real and excuses are illegal! 😂</p>
+  </header>
+
+  <main class="court-container">
+
+    <section class="case-card">
+      <div class="case-stamp">SPECIAL LOVE CASE</div>
+      <p class="case-number">CASE NO. 06072025</p>
+
+      <h2>The People vs.</h2>
+      <h3 class="accused-name">Nonsenseeee 😈</h3>
+
+      <p class="case-description">
+        The accused, Dev, is charged with stealing Vin's heart,
+        making her smile for no reason, and becoming impossible
+        to live without.
+      </p>
+
+      <div class="heart-divider">♥ ♥ ♥</div>
+
+      <p class="question">How does the accused plead?</p>
+
+      <button id="evidenceBtn" class="main-button">
+        🔍 Present the Evidence
+      </button>
+
+      <div id="evidenceBox" class="evidence-box hidden">
+        <h3>📂 Evidence Against Dev</h3>
+
+        <article class="evidence-item">
+          <span class="evidence-number">01</span>
+          <div>
+            <h4>Stealing a Heart ❤️</h4>
+            <p>The accused stole Vin's heart and refuses to return it.</p>
+          </div>
+        </article>
+
+        <article class="evidence-item">
+          <span class="evidence-number">02</span>
+          <div>
+            <h4>Unnecessary Cuteness 🥹</h4>
+            <p>His smile causes Vin to forget what she was angry about.</p>
+          </div>
+        </article>
+
+        <article class="evidence-item">
+          <span class="evidence-number">03</span>
+          <div>
+            <h4>Missing You Too Much 💌</h4>
+            <p>He has made long-distance love both difficult and beautiful.</p>
+          </div>
+        </article>
+
+        <article class="evidence-item">
+          <span class="evidence-number">04</span>
+          <div>
+            <h4>Being Her Favourite Person 🫶</h4>
+            <p>He somehow became her favourite notification, voice and human.</p>
+          </div>
+        </article>
+
+        <p class="evidence-note">
+          Your Honour, the evidence is embarrassing but undeniable! 😂
+        </p>
+      </div>
+    </section>
+
+    <section class="verdict-card">
+      <div class="gavel" id="gavel" aria-hidden="true">🔨</div>
+
+      <h2>It's Time for the Verdict!</h2>
+      <p>Dev, what is your final answer? Choose wisely, Nonsenseeee. 👀</p>
+
+      <div class="verdict-buttons">
+        <button id="guiltyBtn" class="verdict-button guilty">
+          😈 GUILTY!
+        </button>
+
+        <button id="innocentBtn" class="verdict-button innocent">
+          😇 INNOCENT!
+        </button>
+      </div>
+
+      <div id="verdictResult" class="verdict-result hidden" aria-live="polite">
+        <h3 id="verdictTitle"></h3>
+        <p id="verdictMessage"></p>
+      </div>
+    </section>
+
+    <section class="punishment-card">
+      <p class="small-heading">THE FINAL SENTENCE</p>
+      <h2>Lifetime With Vin 💋</h2>
+
+      <p>
+        After careful consideration, this court has decided that
+        Dev must stay with Vin forever.
+      </p>
+
+      <ul class="punishment-list">
+        <li>❤️ Unlimited love and affection</li>
+        <li>🫂 Unlimited hugs whenever they meet</li>
+        <li>💋 Unlimited kisses, subject to Vin's approval 😂</li>
+        <li>📱 Daily calls and messages</li>
+        <li>🔒 No escaping this relationship!</li>
+      </ul>
+
+      <p class="final-note">
+        No appeals. No refunds. No breakup allowed by this silly court. 😂❤️
+      </p>
+
+      <button id="loveBtn" class="main-button">
+        💌 Accept My Sentence
+      </button>
+
+      <p id="loveMessage" class="love-message hidden" aria-live="polite">
+        Case closed! Dev belongs in Vin's heart forever. ❤️
+        Signed, The Court of Love. ⚖️
+      </p>
+    </section>
+
+  </main>
+
+  <footer class="court-footer">
+    <p>Made with love by Vin, especially for her Nonsenseeee. ❤️</p>
+    <a href="index.html">← Return to Page 1</a>
+  </footer>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#16090f">
+  <title>Love Letters 💌 | You, Me & Forever</title>
+  <link rel="stylesheet" href="love-letters.css">
+  <script src="love-letters.js" defer></script>
+</head>
+<body>
+
+  <header class="page-header">
+    <a href="index.html" class="back-link">← Back to Our Little Secret</a>
+    <p class="eyebrow">JUST FOR YOU, DEV ❤️</p>
+    <h1>Love Letters <span>💌</span></h1>
+    <p class="subtitle">
+      Six little letters for my favourite Nonsenseeee.
+    </p>
+    <p class="instruction">Choose an envelope and open it when you need it. 🥹</p>
+  </header>
+
+  <main class="letters-container">
+
+    <section class="letters-grid" aria-label="Choose a love letter">
+
+      <button class="letter-card" data-letter="miss" aria-label="Open when you miss me">
+        <span class="envelope">💌</span>
+        <span class="letter-label">OPEN WHEN...</span>
+        <span class="letter-title">You Miss Me 🥺</span>
+        <span class="letter-hint">A little piece of me for you</span>
+      </button>
+
+      <button class="letter-card" data-letter="sad" aria-label="Open when you feel sad">
+        <span class="envelope">💌</span>
+        <span class="letter-label">OPEN WHEN...</span>
+        <span class="letter-title">You're Sad 🫂</span>
+        <span class="letter-hint">Let me make your day softer</span>
+      </button>
+
+      <button class="letter-card" data-letter="exam" aria-label="Open when you are stressed about exams">
+        <span class="envelope">💌</span>
+        <span class="letter-label">OPEN WHEN...</span>
+        <span class="letter-title">Exams Stress You 📚</span>
+        <span class="letter-hint">Your personal cheerleader is here</span>
+      </button>
+
+      <button class="letter-card" data-letter="angry" aria-label="Open when you are angry with me">
+        <span class="envelope">💌</span>
+        <span class="letter-label">OPEN WHEN...</span>
+        <span class="letter-title">You're Angry With Me 😤</span>
+        <span class="letter-hint">Okay, let's talk, drama king</span>
+      </button>
+
+      <button class="letter-card" data-letter="motivation" aria-label="Open when you need motivation">
+        <span class="envelope">💌</span>
+        <span class="letter-label">OPEN WHEN...</span>
+        <span class="letter-title">You Need Motivation 🌟</span>
+        <span class="letter-hint">A reminder of how amazing you are</span>
+      </button>
+
+      <button class="letter-card" data-letter="love" aria-label="Open when you want to know how much I love you">
+        <span class="envelope">💌</span>
+        <span class="letter-label">OPEN WHEN...</span>
+        <span class="letter-title">You Doubt My Love ❤️</span>
+        <span class="letter-hint">This one comes straight from my heart</span>
+      </button>
+
+    </section>
+
+    <section id="letterModal" class="letter-modal hidden"
+      role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+
+      <div class="letter-paper">
+        <button id="closeLetter" class="close-button"
+          type="button" aria-label="Close letter">✕</button>
+
+        <div class="paper-heart">♡</div>
+        <p class="paper-label">A LETTER FROM VIN TO DEV</p>
+        <h2 id="modalTitle">My Love ❤️</h2>
+
+        <div id="letterContent" class="letter-content"></div>
+
+        <p class="signature">Forever yours,<br><strong>Your Vin ❤️</strong></p>
+
+        <button id="anotherLetter" class="another-button" type="button">
+          💌 Read Another Letter
+        </button>
+      </div>
+    </section>
+
+    <section class="secret-card">
+      <div class="secret-icon">🎁</div>
+      <h2>One Tiny Secret...</h2>
+      <p>There's something I want you to remember, no matter what.</p>
+      <button id="secretButton" class="secret-button" type="button">
+        Reveal My Secret ❤️
+      </button>
+      <p id="secretMessage" class="secret-message hidden" aria-live="polite">
+        No matter how many letters I write, I'll never find enough words
+        to explain how special you are to me. You are my favourite person,
+        my safe place, and the one I want beside me through all the little
+        things in life. I love you, Nonsenseeee. Always. ❤️
+      </p>
+    </section>
+
+  </main>
+
+  <footer class="page-footer">
+    <p>Six letters. One heart. One favourite person. ❤️</p>
+    <nav aria-label="Page navigation">
+      <a href="index.html">Page 1 · Home</a>
+      <span>♡</span>
+      <a href="court.html">Page 2 · Court of Love</a>
+    </nav>
+  </footer>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#16090f">
+  <title>Fun Zone 🎮 | You, Me & Forever</title>
+  <link rel="stylesheet" href="fun-zone.css">
+  <script src="fun-zone.js" defer></script>
+</head>
+<body>
+
+  <header class="page-header">
+    <a href="index.html" class="back-link">← Back to Our Little Secret</a>
+    <p class="eyebrow">DEV + VIN = CHAOS 😂❤️</p>
+    <h1>Our Fun Zone <span>🎮</span></h1>
+    <p class="subtitle">Let's see how well you know your favourite girl!</p>
+
+    <nav class="page-nav" aria-label="Website pages">
+      <a href="index.html">Home</a>
+      <a href="court.html">Court of Love</a>
+      <a href="love-letters.html">Love Letters</a>
+    </nav>
+  </header>
+
+  <main class="games-container">
+
+    <!-- GAME 1: COUPLE QUIZ -->
+    <section class="game-card" id="coupleQuiz">
+      <div class="game-icon">💘</div>
+      <p class="game-label">GAME 01</p>
+      <h2>The Couple Quiz</h2>
+      <p class="game-description">
+        Let's test your relationship knowledge, Nonsenseeee!
+      </p>
+
+      <div class="quiz-progress">
+        <span id="coupleProgress">Question 1 of 5</span>
+        <div class="progress-track">
+          <div id="coupleProgressBar" class="progress-fill"></div>
+        </div>
+      </div>
+
+      <h3 id="coupleQuestion" class="question">
+        Who is more dramatic?
+      </h3>
+
+      <div id="coupleOptions" class="options-grid">
+        <button class="option-button" type="button" data-answer="0">Vin 😂</button>
+        <button class="option-button" type="button" data-answer="1">Dev 😎</button>
+        <button class="option-button" type="button" data-answer="2">Both of us 🤡</button>
+      </div>
+
+      <p id="coupleFeedback" class="feedback" aria-live="polite"></p>
+
+      <button id="coupleNext" class="primary-button hidden" type="button">
+        Next Question →
+      </button>
+
+      <div id="coupleResult" class="result-panel hidden" aria-live="polite">
+        <h3 id="coupleResultTitle">Quiz Complete! ❤️</h3>
+        <p id="coupleResultText"></p>
+        <button id="coupleRestart" class="secondary-button" type="button">
+          Play Again 🔄
+        </button>
+      </div>
+    </section>
+
+    <!-- GAME 2: HOW WELL DO YOU KNOW VIN? -->
+    <section class="game-card" id="knowVinQuiz">
+      <div class="game-icon">🧠</div>
+      <p class="game-label">GAME 02</p>
+      <h2>How Well Do You Know Vin?</h2>
+      <p class="game-description">
+        Dev, prove that you actually pay attention to your girl! 👀
+      </p>
+
+      <p class="personal-note">
+        These are starter questions. You can edit the answers in
+        <strong>fun-zone.js</strong> to match your real favourites.
+      </p>
+
+      <div class="quiz-progress">
+        <span id="vinProgress">Question 1 of 5</span>
+        <div class="progress-track">
+          <div id="vinProgressBar" class="progress-fill"></div>
+        </div>
+      </div>
+
+      <h3 id="vinQuestion" class="question">What makes Vin happiest?</h3>
+
+      <div id="vinOptions" class="options-grid">
+        <button class="option-button" type="button">A cute message 💌</button>
+        <button class="option-button" type="button">Food 🍕</button>
+        <button class="option-button" type="button">Sleep 😴</button>
+      </div>
+
+      <p id="vinFeedback" class="feedback" aria-live="polite"></p>
+
+      <button id="vinNext" class="primary-button hidden" type="button">
+        Next Question →
+      </button>
+
+      <div id="vinResult" class="result-panel hidden" aria-live="polite">
+        <h3 id="vinResultTitle">Your Result ❤️</h3>
+        <p id="vinResultText"></p>
+        <button id="vinRestart" class="secondary-button" type="button">
+          Try Again 🔄
+        </button>
+      </div>
+    </section>
+
+    <!-- GAME 3: CATCH THE HEARTS -->
+    <section class="game-card heart-game-card" id="heartGame">
+      <div class="game-icon">💗</div>
+      <p class="game-label">GAME 03</p>
+      <h2>Catch the Hearts!</h2>
+      <p class="game-description">
+        Catch as many hearts as you can in 20 seconds. Ready, Nonsenseeee?
+      </p>
+
+      <div class="game-stats">
+        <div class="stat">
+          <span class="stat-label">SCORE</span>
+          <strong id="heartScore">0</strong>
+        </div>
+        <div class="stat">
+          <span class="stat-label">TIME</span>
+          <strong id="heartTime">20s</strong>
+        </div>
+        <div class="stat">
+          <span class="stat-label">BEST</span>
+          <strong id="heartBest">0</strong>
+        </div>
+      </div>
+
+      <button id="startHeartGame" class="primary-button" type="button">
+        Start Game 💕
+      </button>
+
+      <div id="heartPlayfield" class="heart-playfield" aria-label="Catch the hearts game area">
+        <p id="heartInstructions" class="playfield-message">
+          Your hearts will appear here! Tap them quickly. ❤️
+        </p>
+      </div>
+
+      <p id="heartGameMessage" class="game-message" aria-live="polite">
+        Every heart you catch is one more reason to smile. 🥹
+      </p>
+    </section>
+
+    <section class="love-note">
+      <span>💌</span>
+      <h2>One Last Thing...</h2>
+      <p>
+        You don't need a perfect score to win my heart, Dev.
+        You already have it, you silly boy. ❤️
+      </p>
+    </section>
+
+  </main>
+
+  <footer class="page-footer">
+    <p>Made with love by Vin for her favourite Nonsenseeee. ❤️</p>
+    <nav aria-label="More pages">
+      <a href="index.html">Home</a>
+      <a href="court.html">Court of Love</a>
+      <a href="love-letters.html">Love Letters</a>
+    </nav>
+  </footer>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#16090f">
+  <title>Our Memories 📸 | You, Me & Forever</title>
+  <link rel="stylesheet" href="memories.css">
+  <script src="memories.js" defer></script>
+</head>
+<body>
+
+  <header class="page-header">
+    <a href="index.html" class="back-link">← Back to Our Little Secret</a>
+    <p class="eyebrow">A LITTLE BOX OF US ❤️</p>
+    <h1>Our Memories <span>📸</span></h1>
+    <p class="subtitle">
+      Every little moment with you deserves a place here, Dev.
+    </p>
+
+    <nav class="page-nav" aria-label="Website pages">
+      <a href="index.html">Home</a>
+      <a href="court.html">Court of Love</a>
+      <a href="love-letters.html">Love Letters</a>
+      <a href="fun-zone.html">Fun Zone</a>
+    </nav>
+  </header>
+
+  <main class="memories-container">
+
+    <section class="intro-card">
+      <span class="intro-heart">♡</span>
+      <h2>Our Little Memory Book</h2>
+      <p>
+        From silly conversations to moments I never want to forget,
+        these are the little pieces of our story.
+      </p>
+      <p class="small-note">
+        Add your own photos and captions to make this page truly ours. 💌
+      </p>
+    </section>
+
+    <!-- PHOTO GALLERY -->
+    <section class="section-block" id="gallery">
+      <div class="section-heading">
+        <p class="eyebrow">THE TWO OF US</p>
+        <h2>Little Moments, Big Feelings 📷</h2>
+        <p>Tap any photo to see it bigger.</p>
+      </div>
+
+      <div class="memory-grid">
+
+        <button class="memory-card" type="button"
+          data-photo="assets/memory1.jpg"
+          data-caption="One of my favourite moments with you. ❤️"
+          aria-label="Open memory 1">
+          <span class="photo-frame">
+            <img src="assets/memory1.jpg.jpeg" alt="Our first memory"
+              loading="lazy">
+            <span class="photo-placeholder">📸<small>Add memory1.jpg</small></span>
+            <span class="photo-secret hidden">💌</span>
+          </span>
+          <span class="memory-caption">My Favourite Person ❤️</span>
+          <span class="memory-date">A little moment with you</span>
+        </button>
+
+        <button class="memory-card" type="button"
+          data-photo="assets/memory2.jpg"
+          data-caption="Even the smallest moments feel special with you. 🫶"
+          aria-label="Open memory 2">
+          <span class="photo-frame">
+            <img src="assets/memory2.jpg.jpeg" alt="A special moment together"
+              loading="lazy">
+            <span class="photo-placeholder">📸<small>Add memory2.jpg</small></span>
+          </span>
+          <span class="memory-caption">My Happy Place 🫶</span>
+          <span class="memory-date">A moment worth keeping</span>
+        </button>
+
+        <button class="memory-card" type="button"
+          data-photo="assets/memory3.jpg"
+          data-caption="Proof that we can be cute and completely silly at the same time. 😂❤️"
+          aria-label="Open memory 3">
+          <span class="photo-frame">
+            <img src="assets/memory3.jpg.jpeg" alt="A funny memory"
+              loading="lazy">
+            <span class="photo-placeholder">📸<small>Add memory3.jpg</small></span>
+          </span>
+          <span class="memory-caption">Our Nonsense 😂</span>
+          <span class="memory-date">Certified chaos</span>
+        </button>
+
+        <button class="memory-card" type="button"
+          data-photo="assets/memory4.jpg"
+          data-caption="Distance or not, you still have such a special place in my heart. 🌙"
+          aria-label="Open memory 4">
+          <span class="photo-frame">
+            <img src="assets/memory4.jpg.jpeg" alt="A memory to treasure"
+              loading="lazy">
+            <span class="photo-placeholder">📸<small>Add memory4.jpg</small></span>
+          </span>
+          <span class="memory-caption">Us, Always 🌙</span>
+          <span class="memory-date">Near in my heart</span>
+        </button>
+
+        <button class="memory-card" type="button"
+          data-photo="assets/memory5.jpg"
+          data-caption="I hope we make a million more memories together. 💋"
+          aria-label="Open memory 5">
+          <span class="photo-frame">
+            <img src="assets/memory5.jpg.jpeg" alt="A memory for the future"
+              loading="lazy">
+            <span class="photo-placeholder">📸<small>Add memory5.jpg</small></span>
+          </span>
+          <span class="memory-caption">More Memories To Come 💋</span>
+          <span class="memory-date">Our story continues</span>
+        </button>
+
+        <button class="memory-card secret-photo" type="button"
+          data-photo="assets/memory6.jpg"
+          data-caption="Surprise, Nonsenseeee! No matter how many photos I save, my favourite thing will always be you. I love you, Dev. ❤️ — Vin"
+          aria-label="Open secret memory">
+          <span class="photo-frame">
+            <img src="assets/memory6.jpg.jpeg" alt="Our secret memory"
+              loading="lazy">
+            <span class="photo-placeholder">📸<small>Add memory6.jpg</small></span>
+            <span class="photo-secret">💌 Secret!</span>
+          </span>
+          <span class="memory-caption">A Little Secret 🤫</span>
+          <span class="memory-date">Tap to reveal something special</span>
+        </button>
+
+      </div>
+    </section>
+
+    <!-- PHOTO VIEWER -->
+    <section id="photoViewer" class="photo-viewer hidden"
+      role="dialog" aria-modal="true" aria-labelledby="viewerCaption">
+      <button id="closeViewer" class="viewer-close" type="button"
+        aria-label="Close photo">✕</button>
+      <div class="viewer-content">
+        <img id="largePhoto" src="" alt="">
+        <p id="viewerCaption"></p>
+      </div>
+    </section>
+
+    <!-- RANDOM MEMORY -->
+    <section class="random-card">
+      <span class="random-icon">🎲</span>
+      <h2>Random Memory Machine</h2>
+      <p>Feeling nostalgic? Let the website choose a sweet thought for you.</p>
+      <button id="randomMemoryBtn" class="primary-button" type="button">
+        Surprise Me ❤️
+      </button>
+      <p id="randomMemoryText" class="random-result" aria-live="polite">
+        Your next little reminder is waiting...
+      </p>
+    </section>
+
+    <!-- FUNNY CHATS -->
+    <section class="section-block">
+      <div class="section-heading">
+        <p class="eyebrow">OUR CHAOTIC SIDE</p>
+        <h2>Things Only We Understand 😂</h2>
+        <p>Because a little nonsense is part of our love story.</p>
+      </div>
+
+      <div class="chat-list">
+        <article class="chat-card">
+          <span class="chat-emoji">🤡</span>
+          <div>
+            <h3>When we start teasing each other</h3>
+            <p class="chat-line"><strong>Vin:</strong> You're so annoying.</p>
+            <p class="chat-line"><strong>Dev:</strong> And yet, you love me. 😎</p>
+            <p class="chat-note">Unfortunately, he's not wrong. 😂</p>
+          </div>
+        </article>
+
+        <article class="chat-card">
+          <span class="chat-emoji">📱</span>
+          <div>
+            <h3>When one message isn't enough</h3>
+            <p class="chat-line"><strong>Vin:</strong> Okay, bye.</p>
+            <p class="chat-line"><strong>Dev:</strong> Bye.</p>
+            <p class="chat-line"><strong>Both:</strong> Still talking 30 minutes later. 😭</p>
+          </div>
+        </article>
+
+        <article class="chat-card">
+          <span class="chat-emoji">💗</span>
+          <div>
+            <h3>Our favourite kind of problem</h3>
+            <p class="chat-line">Missing each other and wishing we could teleport.</p>
+            <p class="chat-note">One day, the hugs won't have to wait. 🫂</p>
+          </div>
+        </article>
+      </div>
+
+      <p class="small-note">
+        These are example conversations. Replace them with your real inside jokes!
+      </p>
+    </section>
+
+    <!-- THINGS THAT REMIND ME OF YOU -->
+    <section class="section-block reminders-section">
+      <div class="section-heading">
+        <p class="eyebrow">YOU'RE EVERYWHERE IN MY LITTLE WORLD</p>
+        <h2>Things That Remind Me of You 🫶</h2>
+      </div>
+
+      <div class="reminders-grid">
+        <article class="reminder-item">
+          <span>🎵</span>
+          <h3>Songs</h3>
+          <p>Those songs that suddenly make me think of you.</p>
+        </article>
+
+        <article class="reminder-item">
+          <span>🌙</span>
+          <h3>The Night Sky</h3>
+          <p>Looking at the moon and wishing you were beside me.</p>
+        </article>
+
+        <article class="reminder-item">
+          <span>📱</span>
+          <h3>Notifications</h3>
+          <p>That tiny happiness when your name appears on my screen.</p>
+        </article>
+
+        <article class="reminder-item">
+          <span>😂</span>
+          <h3>Random Nonsense</h3>
+          <p>All the silly things that only make sense to us.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="final-note">
+      <span>❤️</span>
+      <h2>To More Memories With You</h2>
+      <p>
+        We haven't made all our favourite memories yet.
+        Some of the best ones are still waiting for us, Dev.
+      </p>
+      <p class="signature">Love, your Vin. Always. 💌</p>
+    </section>
+
+  </main>
+
+  <footer class="page-footer">
+    <p>Our memories, our jokes, our little forever. ❤️</p>
+    <nav aria-label="More pages">
+      <a href="index.html">Home</a>
+      <a href="court.html">Court of Love</a>
+      <a href="love-letters.html">Love Letters</a>
+      <a href="fun-zone.html">Fun Zone</a>
+    </nav>
+  </footer>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forever | You, Me & Forever ❤️</title>
+  <link rel="stylesheet" href="forever.css">
+  <script src="forever.js" defer></script>
+</head>
+<body>
+
+  <header class="site-header">
+    <a href="index.html" class="logo">You, Me & Forever ❤️</a>
+
+    <nav class="navigation">
+      <a href="index.html">Home</a>
+      <a href="court.html">Court of Love</a>
+      <a href="love-letters.html">Love Letters</a>
+      <a href="fun-zone.html">Fun Zone</a>
+      <a href="memories.html">Memories</a>
+      <a href="forever.html" class="active">Forever</a>
+      <a href="until-i-hold-you.html">Long Distance</a>
+      <a href="just-us.html">Just Us</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="eyebrow">A LITTLE PIECE OF MY HEART</p>
+      <h1>Forever & Always <span>❤️</span></h1>
+      <p class="hero-text">
+        Hey, Nonsenseeee! This little corner is filled with hugs,
+        kisses, surprises, and promises made just for you.
+      </p>
+      <a href="#love-coupons" class="primary-button">Open Your Love Gifts 🎁</a>
+    </section>
+
+    <section class="section love-actions">
+      <h2>A Little Love From Me 🫶</h2>
+      <p class="section-description">
+        Since I can't always be beside you, choose a little virtual affection!
+      </p>
+
+      <div class="affection-buttons">
+        <button type="button" class="love-button" id="hugButton">
+          🤗 Send Me a Hug
+        </button>
+        <button type="button" class="love-button" id="kissButton">
+          💋 Send Me a Kiss
+        </button>
+      </div>
+
+      <div class="affection-result" id="affectionResult" aria-live="polite">
+        Your little surprise will appear here ❤️
+      </div>
+
+      <div class="animation-area" id="animationArea" aria-hidden="true"></div>
+    </section>
+
+    <section class="section" id="love-coupons">
+      <h2>Your Love Coupons 🎟️</h2>
+      <p class="section-description">
+        Click a coupon to redeem it. These are my cute promises to you!
+      </p>
+
+      <div class="coupon-grid">
+        <article class="coupon-card">
+          <span class="coupon-icon">🤗</span>
+          <h3>One Big Hug</h3>
+          <p>Redeem for the tightest hug when we meet.</p>
+          <button type="button" class="redeem-button"
+            data-coupon="One Big Hug">Redeem Coupon</button>
+          <p class="coupon-status" aria-live="polite"></p>
+        </article>
+
+        <article class="coupon-card">
+          <span class="coupon-icon">📞</span>
+          <h3>Unlimited Talking</h3>
+          <p>One long call where we talk about absolutely everything.</p>
+          <button type="button" class="redeem-button"
+            data-coupon="Unlimited Talking">Redeem Coupon</button>
+          <p class="coupon-status" aria-live="polite"></p>
+        </article>
+
+        <article class="coupon-card">
+          <span class="coupon-icon">🎬</span>
+          <h3>Virtual Date</h3>
+          <p>A movie, snacks, and your favourite person—me, obviously!</p>
+          <button type="button" class="redeem-button"
+            data-coupon="Virtual Date">Redeem Coupon</button>
+          <p class="coupon-status" aria-live="polite"></p>
+        </article>
+
+        <article class="coupon-card">
+          <span class="coupon-icon">💌</span>
+          <h3>Extra Love</h3>
+          <p>Extra attention, sweet messages, and unlimited care.</p>
+          <button type="button" class="redeem-button"
+            data-coupon="Extra Love">Redeem Coupon</button>
+          <p class="coupon-status" aria-live="polite"></p>
+        </article>
+      </div>
+
+      <p class="coupon-note">
+        *Redeeming these coupons is a cute reminder, not an actual booking.
+        We'll plan our dates together! ❤️
+      </p>
+    </section>
+
+    <section class="section gift-section">
+      <h2>A Surprise For You 🎁</h2>
+      <p class="section-description">
+        There's something inside this little box. Open it, silly!
+      </p>
+
+      <button type="button" class="gift-box" id="giftBox"
+        aria-expanded="false" aria-controls="giftMessage">
+        <span class="gift-emoji" id="giftEmoji">🎁</span>
+        <span class="gift-label" id="giftLabel">Tap to open your gift!</span>
+      </button>
+
+      <div class="gift-message" id="giftMessage" hidden>
+        <span class="gift-heart">❤️</span>
+        <h3>Surprise, My Favourite Human!</h3>
+        <p>
+          If I could gift you one thing, it would be the chance to see
+          yourself through my eyes. Then you would understand why you
+          are so special to me.
+        </p>
+        <p>
+          You're my favourite notification, my favourite headache,
+          and my favourite person to annoy forever. 😂❤️
+        </p>
+        <p class="gift-signature">Forever yours, Vin 💋</p>
+      </div>
+    </section>
+
+    <section class="section promise-section">
+      <p class="eyebrow">A LETTER FROM MY HEART</p>
+      <h2>My Promises to You 💌</h2>
+
+      <div class="letter">
+        <p>My dearest Nonsenseeee, ❤️</p>
+
+        <p>
+          I can't promise that every day will be perfect, but I can
+          promise that what we share will always matter to me.
+        </p>
+
+        <p>
+          I want to listen to you when something is wrong, celebrate
+          your little achievements, support your dreams, and laugh with
+          you over the most stupid things.
+        </p>
+
+        <p>
+          Even when we're far away, I want us to keep choosing each
+          other, communicating honestly, and making time for us.
+          I want to create memories with you that we'll laugh about
+          years later.
+        </p>
+
+        <p>
+          And when we finally meet, I'm claiming that hug. No escaping
+          me, okay? 😂🤗
+        </p>
+
+        <p>
+          Thank you for being my person. I don't need a perfect love
+          story. I just want something real, with you.
+        </p>
+
+        <p class="letter-ending">
+          I love you, today and in all the tomorrows I hope we get. ❤️
+        </p>
+
+        <p class="letter-signature">Your Vin, always. 💋</p>
+      </div>
+    </section>
+
+    <section class="final-section">
+      <div class="floating-heart">❤️</div>
+      <h2>My Favourite Place Is With You.</h2>
+      <p>No matter the distance, you have a special place in my heart.</p>
+      <p class="final-line">You + Me + Forever. ♾️</p>
+      <a href="index.html" class="primary-button">Back to Our Little World 🏠</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    Made with love by Vin, especially for her Nonsenseeee ❤️
+    <p>One heart. Two people. Our little forever. ♾️</p>
+  </footer>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090709">
+  <title>Until I Hold You | You, Me & Forever</title>
+  <link rel="stylesheet" href="until-i-hold-you.css">
+  <script src="until-i-hold-you.js" defer></script>
+</head>
+<body>
+
+  <header class="site-header">
+    <a href="index.html" class="logo">You, Me & Forever ❤️</a>
+
+    <nav class="navigation" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="court.html">Court of Love</a>
+      <a href="love-letters.html">Love Letters</a>
+      <a href="fun-zone.html">Fun Zone</a>
+      <a href="memories.html">Memories</a>
+      <a href="forever.html">Forever</a>
+      <a href="until-i-hold-you.html" class="active">Long Distance</a>
+      <a href="just-us.html">Just Us</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="moon" aria-hidden="true">🌙</div>
+      <p class="eyebrow">TWO HEARTS, ONE LITTLE WORLD</p>
+      <h1>Until I Hold You <span>❤️</span></h1>
+      <p class="hero-text">
+        Miles may keep us apart for now, but you still get a place
+        in my every day. This page is for all the hugs I owe you,
+        Nonsenseeee. 🤗
+      </p>
+      <a class="primary-button" href="#if-i-were-there">
+        Imagine Us Together 💌
+      </a>
+    </section>
+
+    <section class="section" id="if-i-were-there">
+      <p class="eyebrow">IMAGINE THIS...</p>
+      <h2>If I Were There Right Now 🫶</h2>
+      <p class="section-description">
+        Choose what you want me to do if I magically appeared beside you!
+      </p>
+
+      <div class="choice-grid">
+        <button type="button" class="choice-card"
+          data-message="I would hug you so tightly that you would forget every stressful thing for a little while. 🤗❤️"
+          data-emoji="🤗">
+          <span>🤗</span>
+          <strong>Give You a Hug</strong>
+          <small>The never-ending kind</small>
+        </button>
+
+        <button type="button" class="choice-card"
+          data-message="One little kiss from me, and then I would probably laugh at your face. Mwahhh! 💋😂"
+          data-emoji="💋">
+          <span>💋</span>
+          <strong>Steal a Kiss</strong>
+          <small>Don't act shy now!</small>
+        </button>
+
+        <button type="button" class="choice-card"
+          data-message="I would sit beside you, listen to all your stories, and annoy you until you smiled. 😂❤️"
+          data-emoji="🥹">
+          <span>🥹</span>
+          <strong>Spend Time Together</strong>
+          <small>Just you and me</small>
+        </button>
+
+        <button type="button" class="choice-card"
+          data-message="I would hold your hand, look at you, and remind you that you don't have to handle every hard day alone. 🫶"
+          data-emoji="🫶">
+          <span>🫶</span>
+          <strong>Hold Your Hand</strong>
+          <small>Quiet moments together</small>
+        </button>
+      </div>
+
+      <div class="choice-result" id="choiceResult" aria-live="polite">
+        Pick one, silly. ❤️
+      </div>
+    </section>
+
+    <section class="section affection-section">
+      <h2>A Hug Is Just One Tap Away 🤗</h2>
+      <p class="section-description">
+        Not a real hug, unfortunately. But it's the next cutest thing!
+      </p>
+
+      <div class="affection-buttons">
+        <button type="button" class="primary-button" id="virtualHug">
+          Send a Virtual Hug 🤗
+        </button>
+        <button type="button" class="secondary-button" id="virtualKiss">
+          Send a Virtual Kiss 💋
+        </button>
+      </div>
+
+      <div class="hug-result" id="hugResult" aria-live="polite">
+        Waiting for your affection... ❤️
+      </div>
+      <div class="floating-hearts" id="floatingHearts" aria-hidden="true"></div>
+    </section>
+
+    <section class="section meeting-section">
+      <p class="eyebrow">OUR LITTLE FUTURE PLAN</p>
+      <h2>Things We'll Do When We Meet 🥹</h2>
+      <p class="section-description">
+        Tick the things you want us to do together. We can add more dreams later!
+      </p>
+
+      <div class="checklist" id="meetingChecklist">
+        <label class="check-item">
+          <input type="checkbox" value="The longest hug ever">
+          <span>🤗 Give each other the longest hug ever</span>
+        </label>
+
+        <label class="check-item">
+          <input type="checkbox" value="Hold hands and walk">
+          <span>🚶 Hold hands and go for a walk</span>
+        </label>
+
+        <label class="check-item">
+          <input type="checkbox" value="Take cute pictures">
+          <span>📸 Take lots of cute pictures together</span>
+        </label>
+
+        <label class="check-item">
+          <input type="checkbox" value="Eat favourite food">
+          <span>🍕 Eat our favourite food together</span>
+        </label>
+
+        <label class="check-item">
+          <input type="checkbox" value="Laugh at silly things">
+          <span>😂 Laugh at the most nonsense things</span>
+        </label>
+
+        <label class="check-item">
+          <input type="checkbox" value="Spend quiet time together">
+          <span>🌙 Sit together and enjoy just being there</span>
+        </label>
+
+        <label class="check-item">
+          <input type="checkbox" value="Make a new memory">
+          <span>💌 Make a memory we will talk about forever</span>
+        </label>
+      </div>
+
+      <div class="checklist-footer">
+        <p id="checklistProgress" aria-live="polite">0 of 7 things checked</p>
+        <button type="button" class="secondary-button" id="resetChecklist">
+          Reset Checklist
+        </button>
+      </div>
+    </section>
+
+    <section class="section countdown-section">
+      <div class="countdown-moon" aria-hidden="true">🌙</div>
+      <h2>Counting Down to Our Hug? ❤️</h2>
+      <p class="section-description">
+        We haven't decided our meeting date yet, so no countdown for now.
+        When we choose a date, you can set it here!
+      </p>
+
+      <form id="meetingDateForm" class="date-form">
+        <label for="meetingDate">Our meeting date</label>
+        <input type="date" id="meetingDate" name="meetingDate" required>
+        <button type="submit" class="primary-button">Set Countdown ❤️</button>
+      </form>
+
+      <div class="countdown-display" id="countdownDisplay" aria-live="polite">
+        <p class="countdown-placeholder">
+          Our date will go here when we decide. No pressure, just love. 💗
+        </p>
+      </div>
+
+      <button type="button" class="text-button" id="clearMeetingDate" hidden>
+        Clear meeting date
+      </button>
+    </section>
+
+    <section class="final-section">
+      <div class="final-heart" aria-hidden="true">❤️</div>
+      <h2>Until Then, You're Still My Person.</h2>
+      <p>
+        One day, this distance will become a story we tell while sitting
+        beside each other. Until then, let's keep making little memories.
+      </p>
+      <p class="final-line">Missing you a little extra today, Nonsenseeee. 💋</p>
+      <a href="index.html" class="primary-button">Back to Our Little World 🏠</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    Made with love by Vin, for her favourite person ❤️
+    <p>Far apart, close at heart. 🌙</p>
+  </footer>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090709">
+  <title>Just Us | You, Me & Forever ❤️</title>
+  <link rel="stylesheet" href="just-us.css">
+  <script src="just-us.js" defer></script>
+</head>
+<body>
+
+  <header class="site-header">
+    <a href="index.html" class="logo">You, Me & Forever ❤️</a>
+
+    <nav class="navigation" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="court.html">Court of Love</a>
+      <a href="love-letters.html">Love Letters</a>
+      <a href="fun-zone.html">Fun Zone</a>
+      <a href="memories.html">Memories</a>
+      <a href="forever.html">Forever</a>
+      <a href="until-i-hold-you.html">Long Distance</a>
+      <a href="just-us.html" class="active">Just Us</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-heart" aria-hidden="true">🫶</div>
+      <p class="eyebrow">OUR LITTLE PRIVATE CORNER</p>
+      <h1>Just You. Just Me. <span>Just Us.</span></h1>
+      <p>
+        No big plans, no perfect words. Just two people, a little love,
+        and all the small things that make us special. ❤️
+      </p>
+      <a href="#mood-check" class="primary-button">Let's Start Here 💌</a>
+    </section>
+
+    <section class="section" id="mood-check">
+      <p class="eyebrow">TELL ME, SILLY</p>
+      <h2>How Are You Feeling Today? 💗</h2>
+      <p class="section-description">
+        Choose your mood. Imagine me sitting beside you and listening.
+      </p>
+
+      <div class="mood-grid" id="moodGrid">
+        <button type="button" class="mood-card" data-mood="happy"
+          aria-pressed="false">
+          <span>😊</span>
+          <strong>Happy</strong>
+          <small>Life feels good!</small>
+        </button>
+
+        <button type="button" class="mood-card" data-mood="sad"
+          aria-pressed="false">
+          <span>🥺</span>
+          <strong>Sad</strong>
+          <small>I need some comfort.</small>
+        </button>
+
+        <button type="button" class="mood-card" data-mood="tired"
+          aria-pressed="false">
+          <span>😴</span>
+          <strong>Tired</strong>
+          <small>I need some rest.</small>
+        </button>
+
+        <button type="button" class="mood-card" data-mood="stressed"
+          aria-pressed="false">
+          <span>😵‍💫</span>
+          <strong>Stressed</strong>
+          <small>Too much on my mind.</small>
+        </button>
+
+        <button type="button" class="mood-card" data-mood="missing"
+          aria-pressed="false">
+          <span>🥹</span>
+          <strong>Missing Me</strong>
+          <small>Admit it, you miss Vin!</small>
+        </button>
+      </div>
+
+      <div class="mood-message" id="moodMessage" aria-live="polite">
+        <span class="message-icon">💌</span>
+        <p>Choose your mood, and your little message will appear here.</p>
+      </div>
+
+      <p class="saved-status" id="moodSavedStatus" aria-live="polite"></p>
+    </section>
+
+    <section class="section love-note-section">
+      <p class="eyebrow">A LITTLE REMINDER</p>
+      <h2>Your Love Note for Today 💌</h2>
+      <p class="section-description">
+        Whenever you need a tiny reminder of how much you matter, open one.
+      </p>
+
+      <div class="love-note-card">
+        <div class="note-heart" aria-hidden="true">❤️</div>
+        <p id="dailyNote">
+          You are loved more than you know, Nonsenseeee.
+        </p>
+        <button type="button" class="primary-button" id="newNoteButton">
+          Open a Love Note 💗
+        </button>
+      </div>
+    </section>
+
+    <section class="section question-section">
+      <p class="eyebrow">LET'S TALK ABOUT US</p>
+      <h2>Our Little Question of the Day 🥹</h2>
+
+      <div class="question-card">
+        <span class="question-icon" aria-hidden="true">💭</span>
+        <p id="dailyQuestion">
+          What's one little thing I do that makes you smile?
+        </p>
+        <button type="button" class="secondary-button" id="nextQuestionButton">
+          Another Question ↻
+        </button>
+      </div>
+      <p class="question-hint">
+        You can ask each other these questions on a call or save your answers
+        for your next meeting. ❤️
+      </p>
+    </section>
+
+    <section class="section message-section">
+      <p class="eyebrow">WORDS FROM YOUR HEART</p>
+      <h2>Leave a Little Message 📝</h2>
+      <p class="section-description">
+        Write whatever is on your mind. Copy it if you want to send it to him.
+      </p>
+
+      <label class="field-label" for="personalMessage">Your message</label>
+      <textarea id="personalMessage" rows="5" maxlength="1000"
+        placeholder="Hey Nonsenseeee... today I wanted to tell you..."></textarea>
+
+      <div class="message-tools">
+        <span id="characterCount">0 / 1000</span>
+        <button type="button" class="primary-button" id="copyMessageButton">
+          Copy My Message 📋
+        </button>
+        <button type="button" class="secondary-button" id="clearMessageButton">
+          Clear
+        </button>
+      </div>
+
+      <p class="saved-status" id="messageStatus" aria-live="polite"></p>
+      <p class="privacy-note">
+        Your message is kept in this browser if local storage is available.
+        It is not automatically sent to anyone.
+      </p>
+    </section>
+
+    <section class="section date-section">
+      <p class="eyebrow">OUR NEXT LITTLE DATE</p>
+      <h2>Pick Our Virtual Date 🎬</h2>
+      <p class="section-description">
+        Choose how you want to spend time together, even if we're far apart.
+      </p>
+
+      <div class="date-options" id="dateOptions">
+        <label class="date-option">
+          <input type="radio" name="virtualDate" value="movie">
+          <span class="date-option-icon">🎬</span>
+          <strong>Movie Night</strong>
+          <small>Same movie, snacks, and a call.</small>
+        </label>
+
+        <label class="date-option">
+          <input type="radio" name="virtualDate" value="gaming">
+          <span class="date-option-icon">🎮</span>
+          <strong>Gaming Together</strong>
+          <small>Play, laugh, and annoy each other.</small>
+        </label>
+
+        <label class="date-option">
+          <input type="radio" name="virtualDate" value="dinner">
+          <span class="date-option-icon">🍕</span>
+          <strong>Dinner Over Call</strong>
+          <small>Eat together while we talk.</small>
+        </label>
+
+        <label class="date-option">
+          <input type="radio" name="virtualDate" value="call">
+          <span class="date-option-icon">📞</span>
+          <strong>Long Phone Call</strong>
+          <small>Talk about everything and nothing.</small>
+        </label>
+      </div>
+
+      <div class="date-schedule">
+        <label class="field-label" for="dateDay">Choose a date (optional)</label>
+        <input type="date" id="dateDay">
+
+        <label class="field-label" for="dateTime">Choose a time (optional)</label>
+        <input type="time" id="dateTime">
+
+        <button type="button" class="primary-button" id="planDateButton">
+          Plan Our Date ❤️
+        </button>
+      </div>
+
+      <div class="date-result" id="dateResult" aria-live="polite">
+        Our next cute date idea will appear here. 🫶
+      </div>
+
+      <button type="button" class="text-button" id="clearDateButton" hidden>
+        Clear Date Plan
+      </button>
+    </section>
+
+    <section class="final-section">
+      <div class="final-heart" aria-hidden="true">💗</div>
+      <h2>It's Always Going to Be You.</h2>
+      <p>
+        On your happy days, your difficult days, and all the ordinary days
+        in between, I hope we keep making space for each other.
+      </p>
+      <p class="final-line">One day at a time. One memory at a time. Just us. ❤️</p>
+      <a href="index.html" class="primary-button">Back to Our Little World 🏠</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    Made with love by Vin, for her Nonsenseeee ❤️
+    <p>Our little world, one day at a time. ♾️</p>
+  </footer>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
